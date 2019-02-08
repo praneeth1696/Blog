@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Team Blog Page</h1>
+  <br>
+  <div style="padding: 25px 0px;"  *ngFor = "let blog of blogs">
+  <div class="card w-75">
+    <div class="card-header">
+      {{ blog.title }}
+      <span style="float: right; color: red;" (click)="removeBlog(blog)">X</span>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ blog.topic }}</h5>
+      <p class="card-text">{{ blog.content }}</p>
+      <a href="#" class="btn btn-primary">Know more</a>
+    </div>
+  </div>
+</div>      
+</div>
+
+
+
