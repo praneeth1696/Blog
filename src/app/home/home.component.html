@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Team Blog Page</h1>
+  <br>
+  <ul class="Blogs">
+  <div style="padding: 25px 0px;"  *ngFor = "let blog of Blogs">
+  <div class="card w-75">
+    <div class="card-header">
+      {{ blog.title }}
+      <!--<span style="float: right; color: red;" (click)="removeBlog(blog)">X</span> -->
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ blog.topic }}</h5>
+      <p class="card-text">{{ blog.content }}</p>
+      <a href="#" class="btn btn-primary">Know more</a>
+    </div>  
+  </div>
+  <br>
+  <div>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="#" class="btn btn-primary a-btn-slide-text">
+      <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+      <span><strong>Update</strong></span>            
+  </a>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+  <a class="btn btn-primary a-btn-slide-text">
+     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+      <span (click)="removeBlog(blog)">Delete</span>            
+  </a>
+  </div>    
+</div>  
+</ul>
+
+</div>
+
+
+
