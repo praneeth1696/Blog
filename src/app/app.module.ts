@@ -15,6 +15,7 @@ import { UpdateBlogComponent } from './home/update-blog/update-blog.component';
 import { DeleteBlogComponent } from './home/delete-blog/delete-blog.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AngularEditorModule } from '@kolkov/angular-editor';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     NgbModule,
     // SlimLoadingBarModule,
     HttpClientModule,
+    AngularEditorModule,
     FormsModule
   ],
   providers: [],
